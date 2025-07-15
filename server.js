@@ -11,7 +11,7 @@ app.use(express.json())
 //Define o caminho da rota '/' GET e define os parametros request e response
 //Para lidar com a requisição do cliente e enviar uma resposta do servidor
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'))
+    res.status(200).type('html').sendFile(path.join(__dirname, 'views', 'index.html'))
 })
 
 app.listen(PORT, () => {
@@ -33,7 +33,7 @@ app.get('/sugestao', (req, res) => {
 
 app.get('/contato', (req, res) => {
     res.set('Content-Type', 'text/html')
-    res.sendFile(path.join(__dirname, 'public', 'contato.html'))
+    res.status(200).type('html').sendFile(path.join(__dirname, 'views', 'contato.html'))
 })
 
 app.post('/contato', (req, res) => {
