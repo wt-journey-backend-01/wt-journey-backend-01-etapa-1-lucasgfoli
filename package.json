@@ -1,0 +1,24 @@
+{
+  "name": "devburguer",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasgfoli/devburguer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasgfoli/devburguer/issues"
+  },
+  "homepage": "https://github.com/lucasgfoli/devburguer#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
