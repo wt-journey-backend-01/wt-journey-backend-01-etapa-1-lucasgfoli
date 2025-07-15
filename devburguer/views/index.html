@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="../public/images/logo.png" alt="logo">
+        <a href="index.html">Home</a>
+        <a href="contato.html">Contato</a>
+    </header>
+
+    <main>
+        <form action="/views/contato.html" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="ingredientes">Ingredientes</label>
+            <textarea id="ingredientes" name="ingredientes" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer class="rodape">
+        <div class="conteudo-footer">
+            <p class="p-footer">Projeto de: Lucas Oliveira</p>
+            <p class="p-footer">Contato: lucasgabrielfer.oli@gmail.com</p>
+            <p class="p-footer">
+                Redes sociais:
+                <a href="https://github.com/lucasgfoli" target="_blank">
+                    Github <img src="github-icon.png" alt="GitHub" class="icon-social">
+                </a>
+                <a href="https://linkedin.com/lucasoliveira" target="_blank">
+                    LinkedIn <img src="linkedin-icon.png" alt="LinkedIn" class="icon-social">
+                </a>
+            </p>
+        </div>
+        <div class="linha-tracejada"></div>
+    </footer>
+</body>
+
+
+</html>

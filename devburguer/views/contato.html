@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../public/css/contato.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="../public/images/logo.png" alt="logo">
+        <a href="index.html">Home</a>
+        <a href="contato.html">Contato</a>
+    </header>
+
+    <main>
+        <div class="form">
+            <form action="/contato" method="post">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" required>
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="assunto">Assunto: </label>
+                <input type="text" name="assunto" id="assunto" required>
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer class="rodape">
+        <div class="conteudo-footer">
+            <p class="p-footer">Projeto de: Lucas Oliveira</p>
+            <p class="p-footer">Contato: lucasgabrielfer.oli@gmail.com</p>
+            <p class="p-footer">
+                Redes sociais:
+                <a href="https://github.com/lucasgfoli" target="_blank">
+                    Github <img src="github-icon.png" alt="GitHub" class="icon-social">
+                </a>
+                <a href="https://linkedin.com/lucasoliveira" target="_blank">
+                    LinkedIn <img src="linkedin-icon.png" alt="LinkedIn" class="icon-social">
+                </a>
+            </p>
+        </div>
+        <div class="linha-tracejada"></div>
+    </footer>
+</body>
+
+</html>
