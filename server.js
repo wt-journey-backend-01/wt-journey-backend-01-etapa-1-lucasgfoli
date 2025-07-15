@@ -24,10 +24,15 @@ app.get('/sugestao', (req, res) => {
     if (!nome || !ingredientes)
         return res.status(400).send('Parâmetros ausentes')
 
-    res.send(`<script>alert("Obrigado pela sua sugestão ${nome}! Você sugeriu ${ingredientes}"); window.location.href = "/page_location"; </script>`)
+    res.send(`
+        <h1>Obrigado pela sugestão ${nome}!</h1>
+        <p> Você sugeriu ${ingredientes} </p>
+        <a href="/">Voltar</a>
+        `)
 })
 
 app.get('/contato', (req, res) => {
+    res.set('Content-Type', 'text/html')
     res.sendFile(path.join(__dirname, 'public', 'contato.html'))
 })
 
