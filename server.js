@@ -38,8 +38,7 @@ app.post('/contato', (req, res) => {
         return res.status(400).send('Todos os campos são obrigatórios!')
 
     res.send(`
-        <h1>Contato Recebido</h1>
-        <p>Nome: ${nome}</p>
+        <h1>Contato Recebido, obrigado ${nome}!</h1>
         <p>Email: ${email}</p>
         <p>Assunto: ${assunto}</p>
         <p>Mensagem: ${mensagem}</p>
