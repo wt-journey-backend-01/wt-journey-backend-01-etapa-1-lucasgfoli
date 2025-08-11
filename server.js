@@ -4,7 +4,7 @@ const path = require('path')
 const app = express()
 const PORT = 3000
 
-app.use(express.static('public'))
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
     res.status(200).type('html').sendFile(path.join(__dirname, 'views', 'index.html'))
 })
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0',  () => {
     console.log(`Servidor rodando na porta ${PORT}`)
 })
 
